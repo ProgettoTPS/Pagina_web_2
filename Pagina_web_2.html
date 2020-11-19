@@ -7,11 +7,21 @@
 </head>
 <body>
     <tr>
-        <th> <button type="button"> Matematica </button> </th> <br>
-        <th> <button type="button"> Italiano </button> </th> <br>
-        <th> <button type="button"> Biologia </button> </th> <br>
-        <th> <button type="button"> Musica </button> </th> <br>
-        <th> <button type="button"> Botanica </button> </th> <br>
+        <th> <button type="button" onclick="myFunction('')" style="position: centre;"> Matematica </button> </th> 
+        <th> <button type="button" onclick="myFunction('Dennis.html')"> Italiano </button> </th> 
+        <th> <button type="button" onclick="myFunction('')"> Biologia </button> </th> 
+        <th> <button type="button" onclick="myFunction('Massimo.html')"> Musica </button> </th> 
+        <th> <button type="button" onclick="myFunction('')"> Botanica </button> </th> 
+
+        <script>
+            function myFunction(s) 
+            {  
+              document.getElementById("Iframe").src = s;
+            }
+        </script>
+
+        <iframe src="" width="100%" height="920" id="Iframe">
+        </iframe>
     </tr>
 </body>
 </html>
